@@ -20,4 +20,4 @@ The lineament is a linear feature describing discontinuity in a landscape. The l
 *    ``$python3 __main__.py C:\Data\input.txt 150 200 20 C:\Data\result.txt``
 
 ### Input data:
-* [MHHCA-Python-Input](https://github.com/OKaas/LineamentExtraction-MHHCA-Input)
+* [MHHCA-Input](https://github.com/OKaas/LineamentExtraction-MHHCA-Input)
