@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b75e794c-55ef-406a-b37a-4578abc7a27e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/__main__.py" afterPath="$PROJECT_DIR$/main/__main__.py" />
     </list>
     <ignored path="GIS-line-python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,8 +26,8 @@
       <file leaf-file-name="__main__.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main/__main__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="457" column="0" lean-forward="true" selection-start-line="457" selection-start-column="0" selection-end-line="457" selection-end-column="0" />
+            <state relative-caret-position="461">
+              <caret line="463" column="30" lean-forward="true" selection-start-line="463" selection-start-column="30" selection-end-line="463" selection-end-column="30" />
               <folding>
                 <element signature="e#437#448#0" expanded="true" />
               </folding>
@@ -588,7 +585,14 @@
       <option name="project" value="LOCAL" />
       <updated>1485955249016</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="- to python 2.7">
+      <created>1486025268320</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1486025268320</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -661,7 +665,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="- init commit" />
+    <MESSAGE value="- to python 2.7" />
+    <option name="LAST_COMMIT_MESSAGE" value="- to python 2.7" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1018,8 +1023,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main/__main__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="457" column="0" lean-forward="true" selection-start-line="457" selection-start-column="0" selection-end-line="457" selection-end-column="0" />
+        <state relative-caret-position="461">
+          <caret line="463" column="30" lean-forward="true" selection-start-line="463" selection-start-column="30" selection-end-line="463" selection-end-column="30" />
           <folding>
             <element signature="e#437#448#0" expanded="true" />
           </folding>
