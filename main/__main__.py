@@ -12,7 +12,6 @@ import time
 import random
 import argparse
 
-
 # ============================================
 
 # OWN STRUCTURES =============================
@@ -27,10 +26,10 @@ class Vertex:
         self.acumulator = 0.0
         self.index = i
 
-    def info(self):
-        if len(self.clients) > 0:
-            print(*self.clients, sep=", ")
-        print(*self.coords, sep=', ')
+    # def info(self):
+    #     if len(self.clients) > 0:
+    #         print '{}'.format(self.clients)
+    #     print self.coords, sep=', '
 
     def remove_client(self, index):
         for i in range(0, len(self.clients)):
@@ -64,7 +63,11 @@ FACILITIES = []
 REASSIGN_VERTICES = []
 FACILITIES_CLOSE = []
 
-MIN_DIST = math.inf
+INFINITE = float('inf')
+INFINITE_NEG = -float('inf')
+
+MIN_DIST = INFINITE
+
 
 
 def read_data(input_file):
@@ -335,8 +338,8 @@ def compute_bounding_box():
     global border_max
     global border_min
 
-    border_max = [-math.inf] * len(VERTICES[0].coords)
-    border_min = [math.inf] * len(VERTICES[0].coords)
+    border_max = [-INFINITE_NEG] * len(VERTICES[0].coords)
+    border_min = [INFINITE] * len(VERTICES[0].coords)
 
     # sum up the squares of the box sizes in all dimensions
     for i in range(0, len(VERTICES)):
@@ -359,7 +362,7 @@ def closest_facility(vertex):
     """
     global MIN_DIST
 
-    MIN_DIST = math.inf
+    MIN_DIST = Ellipsis
     ret = -1
 
     for facility in range(0, int(len(FACILITIES))):
@@ -442,9 +445,10 @@ def clustering():
     generate_initial_solution()
     perform_iterations(int(math.log10(VERTICES_LEN / 10)))
 
-    print("Lines:\t\t\t %d" % VERTICES_LEN)
-    print("Time:\t\t\t %f" % (time.clock() - start_total))
-    print("Output file:\t %s" % OUTPUT_FILE)
+    print "Hello world"
+    print "Lines:\t\t\t {}".format(VERTICES_LEN)
+    print 'Time:\t\t\t {}'.format(time.clock() - start_total)
+    print 'Output file:\t {}'.format(OUTPUT_FILE)
 
     print_result(OUTPUT_FILE)
 
